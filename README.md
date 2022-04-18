@@ -15,6 +15,24 @@ or
 
 ``` git restore <deleted file> ```
 
+# 3 - Discargind chunks / Lines in a file
+
+``` git restore -p <file> ```
+
+## Discard this hunk from worktree [y,n,q,a,d,s,e,?]?
+y - discard this hunk from worktree
+n - do not discard this hunk from worktree
+q - quit; do not discard this hunk or any of the remaining ones
+a - discard this hunk and all later hunks in the file
+d - do not discard this hunk or any of the later hunks in the file
+s - split the current hunk into smaller hunks
+e - manually edit the current hunk
+? - print help
+
+# 4 - Discard all changes
+
+``` git restore . ```
+
 
 
 
