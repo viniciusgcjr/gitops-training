@@ -1,0 +1,82 @@
+
+html, body {
+	height: 95%;
+	margin: 0px;
+	padding: 0px;
+	
+	}
+
+#cabecalho {
+  
+  margin: 0px;
+  padding: 2px;
+  top: 1%;
+  border-radius: 5px;
+  z-index: 5;
+  border: 1px solid #999;
+  background-color: #f0f0f0;
+  background: #d6e0f5; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(214,224,245,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(214,224,245,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(214,224,245,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(214,224,245,1)); /*Standard*/
+  font-family: 'sans-serif';
+  
+}
+
+.box{
+display: inline-block;
+}
+
+#logo {
+text-align: center;
+z-index:4;
+
+}
+
+#titulo {
+	text-align: center;
+	left:50%;
+}
+	
+#map {
+	position: relative;
+	margin: 4px;
+	top: 4.5%;
+	height: 100%;
+	z-index: 1;
+	border-radius: 25px;
+	}
+	
+#legenda {
+	width: 30px;
+	height: 50px;
+	position:absolute;
+	right:10%;
+	top: 15%;
+	z-index:2;
+	}
+	
+#timestamp{
+	position: relative;
+	top: 1px;
+	z-index:3;
+	text-align: right;
+  font-family: 'sans-serif';
+	}	
+
+	  
+#floating-panel  {
+  position: absolute;
+  top: 85px;
+  
+  z-index: 5;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 10px;
+  padding-left: 10px;
+  width:99%;
+}

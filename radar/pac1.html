@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+	<meta http-equiv="refresh" content="300">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" charset="utf-8">
+    
+	<title>RADAR - PAC de 1 hora</title>
+	
+	<link rel="shortcut icon" href="estilo/icon.ico" type="image/x-icon" / >
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<script type="text/javascript" src="js/radar.js"></script>
+	<script src="js/moment.js"></script>
+	<script type="text/javascript" src="js/pachl.js"></script>
+	<script type="text/javascript" src="js/pactimestamp.js"></script>
+ 
+
+	
+  </head>
+  
+  <body>
+  
+  <div id="cabecalho">
+	
+	 
+	<span id="logo" class="box"><a href="http://www.apac.pe.gov.br/meteorologia/"><img src="./estilo/apac-transp.png" id="logo" ></img></a></span>
+	
+	 
+	</div>
+  
+    <div id="floating-panel">
+      <input onclick="removeOverlay();" type=button value="Remover">
+      <input onclick="addOverlay();" type=button value="Restaurar">
+	  <button type="button" onclick="imagemAnterior()">Anterior</button>
+	  <button type="button" onclick="pausar();this.disabled = true; document.getElementById('btnplay').disabled = false" type="submit" class="positive" id="btnpause"> Pause</button>
+	  <button type="button" onclick="play();this.disabled = true; document.getElementById('btnpause').disabled = false" type="submit" class="positive"  id="btnplay">Play</button>
+       <button type="button" onclick="proximaImagem()">Próxima</button>
+	   <span id="timestamp" >Data e Hora</span>
+	   
+    </div>
+	
+	
+	
+    <div id="legenda"><img src="estilo/legendas/legenda_pac_tp.png" /></div>     
+	
+    <div id="map"></div>
+    
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR67AKvexNeW487s8lV2plKgl_muJo2ac&callback=initMap" async defer></script>
+    
+	
+	 
+	   
+  </body>
+</html>
