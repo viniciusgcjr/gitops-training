@@ -29,10 +29,11 @@ s - split the current hunk into smaller hunks
 e - manually edit the current hunk
 ? - print help
 
-# 4 - Discard all changes
+# 4 - Discard all local changes
 
 ``` git restore . ```
 
+# 5 - Fixing the last commit
 
-
+git commit --amend -m "correct"
 
