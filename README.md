@@ -37,3 +37,5 @@ e - manually edit the current hunk
 
 git commit --amend -m "correct"
 
+**--amend rewrites history! Never change history for commits that have already been pushed to a remote repository!**
+
