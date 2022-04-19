@@ -106,4 +106,16 @@ Note: HEAD~1 means one behind HEAD
 ```git rebase -i HEAD~3```
 ...then replace "pick" for **"drop"**   
 
-# 15 - 
+# 15 - Squashing multiple commits into one
+
+```git rebase -i HEAD~3```
+...then replace "pick" for squash
+...then write new commit message
+
+**Note:** This will merge the line with squash word and the one before it.
+
+# 16 - Adding a change to an old commit
+
+```git commit --fixup <SHA>```
+```git rebase -i --autosquash HEAD~4```
+
