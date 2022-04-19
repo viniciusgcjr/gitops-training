@@ -39,11 +39,6 @@ git commit --amend -m "correct"
 
 **--amend rewrites history! Never change history for commits that have already been pushed to a remote repository!**
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> d8eb039 (cap 12 readme)
 # 6 - Reverting a commit in the middle
 
 ``` git revert <commit hash> ```
@@ -59,7 +54,7 @@ Note: git revert creates a new commit that reverts the effects of a specified co
 # 8 - Resetting a file to an old revision
 
 ```git restore  --source <commit hash> <filename> ```
-<<<<<<< HEAD
+
 =======
 
 # 9 - Recovering deleted commits
