@@ -39,6 +39,11 @@ git commit --amend -m "correct"
 
 **--amend rewrites history! Never change history for commits that have already been pushed to a remote repository!**
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d8eb039 (cap 12 readme)
 # 6 - Reverting a commit in the middle
 
 ``` git revert <commit hash> ```
@@ -54,3 +59,41 @@ Note: git revert creates a new commit that reverts the effects of a specified co
 # 8 - Resetting a file to an old revision
 
 ```git restore  --source <commit hash> <filename> ```
+<<<<<<< HEAD
+=======
+
+# 9 - Recovering deleted commits
+
+```git reflog```
+```git branch <branch name> <commit hash>```
+
+# 10 - Recovering a deleted branch
+
+```git reflog```
+```git branch <branch name> <commit hash>```
+
+# 11 - Moving a commit to a new branch
+
+In case of you should have created a new branch before commiting:
+
+c1 <-- c2 <-- c3 master/HEAD       (wrong)
+
+
+c1 <-- c2 ------ master            (correct)
+        |
+        <--- c3 login/HEAD
+
+```git branch <branch name>```
+```git reset HEAD~1 --hard```
+
+Note: HEAD~1 means one behind HEAD
+
+# 12 - Moving a commit to a different branch
+
+```git checkout <branch>```
+```git cherry-pick <SHA>```
+```git git checkout main```
+```git reset HEAD~1 --hard```
+
+# 13 - Editing old commit messages
+
