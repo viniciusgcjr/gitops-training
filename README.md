@@ -97,3 +97,13 @@ Note: HEAD~1 means one behind HEAD
 
 # 13 - Editing old commit messages
 
+```git rebase -i HEAD~3```
+...then replace "pick" for **"reword"**   
+...then rewrite the commit message.
+
+# 14 - Deleting old commits
+
+```git rebase -i HEAD~3```
+...then replace "pick" for **"drop"**   
+
+# 15 - 
